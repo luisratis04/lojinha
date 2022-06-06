@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:each="contato : ${lista}">
+
+        <span th:text="${contato.nome}" ></span>
+        <span th:text="${contato.telefone}" ></span>
+        <a th:href="@{/excluir/{id}(id=${contato.id})}">Excluir</a>
+        <a th:href="@{/mostrarFormEditar/{id}(id=${contato.id})}">Editar</a>
+        <a th:href="@{/mostrarFormAdicionarEndereco/{id}(id=${contato.id})}">Adicionar Endereço</a>
+    </div>
+
+<a href="/"> Cadastrar Contatos</a>
+
+</body>
+</html>

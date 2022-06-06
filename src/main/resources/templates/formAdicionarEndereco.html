@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <form th:action="@{/adicionarEndereco/{id}(id=${id_contato})}" method="post">
+            <label>Rua: </label><input type="text" name="rua">
+            <label>Número: </label><input type="number" name="numero">
+            <input type="submit" value="Adicionar">
+        </form>
+
+    </body>
+</html>
