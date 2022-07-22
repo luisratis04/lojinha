@@ -19,7 +19,7 @@ public class Pedido {
     @NotEmpty
     private String data;
     @NotNull
-    private int numRastreio;
+    private long numRastreio;
     @NotNull
     private boolean frete;
 
@@ -42,11 +42,11 @@ public class Pedido {
         this.data = data;
     }
 
-    public int getNumRastreio() {
+    public long getNumRastreio() {
         return numRastreio;
     }
 
-    public void setNumRastreio(int numRastreio) {
+    public void setNumRastreio(long numRastreio) {
         this.numRastreio = numRastreio;
     }
 

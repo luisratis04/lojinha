@@ -21,7 +21,7 @@ public class ItemPedidoDTO {
         this.id_produto = id_produto;
     }
 
-    public long getQuantidade() {
+    public int getQuantidade() {
         return quantidade;
     }
 
